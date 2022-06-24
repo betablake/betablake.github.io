@@ -1,0 +1,10 @@
+/* Level 1 Heading Modification */
+h1 {
+    color: #000099;
+    text-decoration: underline;
+}
+
+/* Page Padding */
+body {
+    padding: 1.5em;
+}
