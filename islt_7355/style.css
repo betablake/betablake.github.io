@@ -6,5 +6,7 @@ h1 {
 
 /* Page Padding */
 body {
-    padding: 1.5em;
+    padding-top: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
