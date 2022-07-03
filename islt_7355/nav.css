@@ -5,11 +5,17 @@ nav {
     width: 100%;
 }
 
+nav ul {
+    padding-inline-start: 0;
+}
+
 .topnav {
     display: inline;
     background-color: #99ccff;
     padding: 1em;
-    margin:.25em;
+    margin-top:.25em;
+    margin-bottom: .25em;
+    margin-right: 1em;
     border-radius: .5em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -21,14 +27,15 @@ nav {
 .dropdown {
     float: left;
     position: relative;
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     top: 1em;
-    left: 14em;
+    left: 11.55em;
     z-index: 1;
     list-style: none;
     min-width: 4;
@@ -41,14 +48,11 @@ nav {
 
 nav ul li ul li {
     padding: 1em;
-    margin: .25em;
+    margin-top:.25em;
+    margin-bottom: .25em;
     background-color: #99ccff;
     border-radius: .5em;
 }
-
-/*nav ul li:hover > ul {
-    display: block;
-}*/
 
 li.topnav.projList:hover .dropdown-content {
     display: block;

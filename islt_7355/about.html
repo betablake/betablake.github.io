@@ -3,21 +3,22 @@
 <html lang="en-US">
 
     <head>
-        <!--
-        *****************************************************************************
-        Title:  About Me
-        Use:  To inform viewers of my experience, skills, and attributes
-        Author:  Blake Pieper
-        School/Term:  University of Missouri, Summer 2022
-        Developed: 6/30/22
-        Tested:  6/30/22
-        ******************************************************************************
-        -->
+<!--
+*****************************************************************************
+Title:  About Me
+Use:  To tell people that I exist
+Author:  Blake Pieper
+School/Term:  University of Missouri, Summer 2022
+Developed: 7/3/22
+Tested:  7/3/22
+******************************************************************************
+-->
 
+<!-- Doc Info -->
         <meta charset="utf-8">
         <title>About Me</title>
 
-        <!-- Style Sheets -->
+<!-- Style Sheets -->
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="nav.css" />
 
@@ -25,12 +26,22 @@
 
     <body>
 
+<!-- Nav Bar -->
         <nav>
             <ul>
                 <li class="topnav"><a href="/islt_7355/index.html">Home</a></li>
                 <li class="topnav"><a href="/islt_7355/about.html">About</a></li>
-                <li class="topnav"><a href="/islt_7355/projects.html">Projects</a></li>
-                <li class="topnav"><a href="#reflection.html">Reflection</a></li>
+                <li class="topnav projList">
+                    <a href="/islt_7355/projects.html">Projects</a>
+                        <ul class="dropdown">
+                            <div class="dropdown-content">
+                                <li class="dropItem"><a href="#link1">link 1</a></li>
+                                <li class="dropItem"><a href="#link2">link 2</a></li>
+                                <li class="dropItem"><a href="#link3">link 3</a></li>
+                            </div>
+                        </ul>
+                </li>
+                <li class="topnav"><a href="/islt_7355/Reflection.html">Reflection</a></li>
                 <li class="topnav"><a href="#contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -39,6 +50,7 @@
             <h1>About Me</h1>
         </header>
 
+<!-- Content -->
         <main>
             <h3>Project Manager, Master's Student, Video Game Developer</h3>
 
@@ -48,25 +60,22 @@
             </blockquote>
             <hr />
 
-            <p class="paragraph">
-                My name is <b>Blake Pieper</b>, and I am a Master of Science of Learning Technologies and Design student at the <em>University of Missouri - Columbia</em>. I am also enrolled in the graduate certificate program for Serious Games and Simulation Design. I expect to graduate in <strong>May of 2023</strong> for both programs. My educational focus is on learning game development and design for adults. 
-                <br />
-                <br />
-                I have a Bachelor of Business Marketing from the <i>University of Minnesota</i> as well as a professional certificate in Web Design and Development from <em>eCornell</em>. I am a certified Scrum Master from the Scrum Alliance as well.            
+            <p class="indented">
+                My name is <b>Blake Pieper</b>, and I am a Master of Science of Learning Technologies and Design student at the <em>University of Missouri - Columbia</em>. I am also enrolled in the graduate certificate program for Serious Games and Simulation Design. I expect to graduate in <strong>May of 2023</strong> for both programs. My educational focus is on learning game development and design for adults. I have a Bachelor of Business Marketing from the <i>University of Minnesota</i> as well as a professional certificate in Web Design and Development from <em>eCornell</em>. I am a certified Scrum Master from the Scrum Alliance as well.            
             </p>
 
             <br />
 
             <p>
                 Professional resume:
-                <a href="/islt_7355/blake-pieper-resume.pdf" target="_blank">Click Here</a>
+                <a href="/blake-pieper-resume.pdf" target="_blank">Click Here</a>
             </p>
         </main>
 
+<!-- Footer -->
         <footer>
-            <p>Created by Blake Pieper - bp7km@umsystem.edu. 
-            <br />
-            <i class="fa fa-copyright"></i> Blake Pieper. All Rights Reserved.</p>
+            <p>Created by Blake Pieper - bp7km@umsystem.edu. </p>
+            <p class="rightAligned"><i class="fa fa-copyright"></i> Blake Pieper. All Rights Reserved.</p>
         </footer>
 
     </body>
