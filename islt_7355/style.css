@@ -54,3 +54,8 @@ footer {
 .indented:first-of-type {
     text-indent: 0;
 }
+
+img {
+    width: 20%;
+    height: auto;
+}
