@@ -5,33 +5,58 @@ nav {
     width: 100%;
 }
 
+@media screen and (min-width: 600px) {
+
+    .topnav {
+        display: inline;
+        padding: 1em;
+        margin-top:.25em;
+        margin-bottom: .25em;
+        margin-right: 1em;
+    }
+
+    .topnav:hover {
+        background-color: #ffcc99;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 2em;
+        left: 11.55em;
+        z-index: 1;
+        list-style: none;
+        min-width: 4;
+    }
+
+    nav ul li ul li {
+        padding: 1em;
+        margin-top:.25em;
+        margin-bottom: .25em;
+        background-color: #99ccff;
+        border-radius: .5em;
+        width: 4em;
+        height: 1.25em;
+    }
+    
+    li.topnav.projList:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropItem:hover {
+        background-color: #ffcc99;
+    }
+}
+
 nav ul {
     padding-inline-start: 0;
 }
 
 .topnav {
-    display: inline;
+    list-style: none;
     background-color: #99ccff;
-    padding: 1em;
-    margin-top:.25em;
-    margin-bottom: .25em;
-    margin-right: 1em;
     border-radius: .5em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.topnav:hover {
-    background-color: #ffcc99;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 2em;
-    left: 11.55em;
-    z-index: 1;
-    list-style: none;
-    min-width: 4;
 }
 
 .topnav a {
@@ -39,20 +64,31 @@ nav ul {
     color: #000;
 }
 
-nav ul li ul li {
-    padding: 1em;
-    margin-top:.25em;
-    margin-bottom: .25em;
-    background-color: #99ccff;
-    border-radius: .5em;
-    width: 4em;
-    height: 1.25em;
-}
+@media screen and (max-width: 599px) {
+    .topnav {
+        padding: .5em;
+        margin: 0;
+    }
 
-li.topnav.projList:hover .dropdown-content {
-    display: block;
-}
+    .dropdown-content {
+        display: none;
+        list-style: none;
+        position: absolute;
+        top: 6.5em;
+        left: 0;
+        z-index: 1;
+        min-width: 4;
+    }
 
-.dropItem:hover {
-    background-color: #ffcc99;
+    nav ul li ul li {
+        background-color: #ffcc99;
+        border-radius: .5em;
+        padding: .25em;
+        margin: .175em;
+        min-width: 4em;
+        min-height: 1.25em;
+    }
+    li.topnav.projList:click .dropdown-content {
+        display: block;
+    }
 }
