@@ -31,7 +31,6 @@ nav {
         left: 11.55em;
         z-index: 1;
         list-style: none;
-        min-width: 4;
     }
 
     nav ul li ul li {
@@ -86,7 +85,6 @@ nav a {
         top: 6.5em;
         left: 0;
         /*z-index: 1;*/
-        min-width: 4;
     }
 
     nav ul li ul li {
