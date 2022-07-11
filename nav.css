@@ -1,0 +1,114 @@
+nav {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.collapseNav {
+    background-color: #ffcc99;
+    padding: .75em;
+}
+
+@media screen and (min-width: 600px) {
+
+    .topnav {
+        display: inline;
+        padding: 1em;
+        margin-top:.25em;
+        margin-bottom: .25em;
+        margin-right: 1em;
+    }
+
+    .topnav:hover {
+        background-color: #ffcc99;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 2em;
+        left: 11.55em;
+        z-index: 1;
+        list-style: none;
+    }
+
+    nav ul li ul li {
+        padding: 1em;
+        margin-top:.25em;
+        margin-bottom: .25em;
+        background-color: #99ccff;
+        border-radius: .5em;
+        width: 7em;
+        height: 1.25em;
+    }
+    
+    li.topnav.projList:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropItem:hover {
+        background-color: #ffcc99;
+    }
+
+    .collapseNav {
+        display: none;
+    }
+}
+
+nav ul {
+    padding-inline-start: 0;
+}
+
+.topnav {
+    list-style: none;
+    background-color: #99ccff;
+    border-radius: .5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 599px) {
+    #navbar {
+        display: none;
+    }
+
+    .dropdown-content {
+        /*display: none;*/
+        display: block;
+        list-style: none;
+        /*position: absolute;*/
+        top: 6.5em;
+        left: 0;
+        /*z-index: 1;*/
+    }
+
+    nav ul li ul li {
+        background-color: #ffcc99;
+        border-radius: .5em;
+        padding: .25em;
+        margin: .25em;
+        min-width: 4em;
+        min-height: 1.25em;
+    }
+    /*li.topnav.projList:click .dropdown-content {
+        display: block;
+    }*/
+
+    .collapseNav {
+        display: inline;
+    }
+
+    #navbar:target {
+        display: block;
+    }
+
+    .topnav {
+        margin: .25em;
+        padding: .25em;
+    }
+}
