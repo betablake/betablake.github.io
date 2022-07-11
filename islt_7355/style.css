@@ -74,10 +74,15 @@ footer {
 
     .orangeButton {
         background-color: #ffcc99;
-        margin: .75em;
+        margin-top: .75em;
+        margin-bottom: .75em;
+        margin-left: auto;
+        margin-right: auto;
         padding: 1.25em;
         font-size: medium;
         text-decoration: none;
+        max-width: 320px;
+        text-align: center;
     }
 
     img {
@@ -106,10 +111,15 @@ footer {
 
     .orangeButton {
         background-color: #ffcc99;
-        margin: .75em;
+        margin-top: .5em;
+        margin-bottom: .5em;
         padding: 1em;
         font-size: small;
         text-decoration: none;
-        display: inline;
+        text-decoration: none;
+        max-width: 320px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
