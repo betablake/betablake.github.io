@@ -1,125 +1,168 @@
-/* Level 1 Heading Modification */
-h1 {
-    font-size: 1.75em;
-    /*border: .05em solid #000;*/
-    border-radius: .25em;
-    padding: .2em;
-    background-color: #ffcc99;
-}
-
-/* Page Padding */
-body {
-    padding-top: .5em;
-    padding-left: .5em;
-    padding-right: .5em;
-    margin:0;
-}
-
-.indented {
-    text-indent: 5em;
-    padding: 1em;
-    width: auto;
-    margin: .25em;
-    border: 0;
-}
-
-.blueBox {
-    background-color: #99ccff;
-    border-radius: 1em;
-    padding: 1em;
-}  
-
-footer {
-    margin: 0;
-    padding: 0;
-}
-
-.indented:first-of-type::first-letter {
-    font-size: 130%;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-}
-
-.indented:first-of-type {
-    text-indent: 0;
-}
-
-.centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-@media screen and (min-width: 700px) {
-    .rightAligned{
-        position: absolute;
-        right: 0px;
-        float: right;
-    }
-    
-    footer p {
-        margin-block-start: 0;
-        margin-block-end: 0;
-        display: inline;
+/* Page Formatting */
+    @font-face {
+        font-family: retroFont;
+        src: url(EduVICWANTBeginner-VariableFont_wght.ttf);
+        font-weight: bold;
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .orangeButton {
-        background-color: #ffcc99;
-        margin-top: .75em;
-        margin-bottom: .75em;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1.25em;
-        font-size: medium;
-        text-decoration: none;
-        max-width: 320px;
-        text-align: center;
-    }
-
-    img {
-        width: 60%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 699px) {
     h1 {
-        font-size: 1.25em;
-    }
-    h3 {
-        font-size: 1em;
+        font-size: 1.75em;
+        /*border: .05em solid #000;*/
+        border-radius: .25em;
+        padding: .2em;
+        background-color: #ffcc99;
+        font-family: retroFont;
     }
 
-    img {
-        width: 75%;
-        height: auto;
+    body {
+        padding-top: .5em;
+        padding-left: .5em;
+        padding-right: .5em;
+        margin:0;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
     }
 
     .centered {
-        margin-top: 1em;
-        margin-bottom: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+/**/
+
+/* Custom Boxes and Text */
+    .indented {
+        text-indent: 5em;
+        padding: 1em;
+        width: auto;
+        margin: .25em;
+        border: 0;
+    }
+
+    .blueBox {
+        background-color: #99ccff;
+        border-radius: 1em;
+        padding: 1em;
+    }  
+
+    .indented:first-of-type::first-letter {
+        font-size: 130%;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+
+    .indented:first-of-type {
+        text-indent: 0;
+    }
+/**/
+
+/* Desktop View */
+    @media screen and (min-width: 700px) {
+        .rightAligned{
+            position: absolute;
+            right: 0px;
+            float: right;
+        }
+        
+        footer p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            display: inline;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .orangeButton {
+            background-color: #ffcc99;
+            margin-top: .75em;
+            margin-bottom: .75em;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1.25em;
+            font-size: medium;
+            text-decoration: none;
+            max-width: 320px;
+            text-align: center;
+        }
+
+        img {
+            width: 60%;
+            height: auto;
+        }
+    }
+/**/
+
+/* Mobile View */
+    @media screen and (max-width: 699px) {
+        h1 {
+            font-size: 1.25em;
+        }
+        h3 {
+            font-size: 1em;
+        }
+
+        img {
+            width: 75%;
+            height: auto;
+        }
+
+        .centered {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .orangeButton {
+            background-color: #ffcc99;
+            margin-top: .5em;
+            margin-bottom: .5em;
+            padding: 1em;
+            font-size: small;
+            text-decoration: none;
+            text-decoration: none;
+            max-width: 320px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+/**/
+
+/* Print View */
+@media print {
+
+    nav {
+        display: none;
+    }
+
+    img.centered {
+        display: none;
+    }
+
+    i.fa {
+        display: none;
     }
 
     .orangeButton {
-        background-color: #ffcc99;
-        margin-top: .5em;
-        margin-bottom: .5em;
-        padding: 1em;
-        font-size: small;
-        text-decoration: none;
-        text-decoration: none;
-        max-width: 320px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        display: none;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        color: #000;
+        margin: 1in;
+    }
+
+    h1 {
+        font-family: retroFont;
     }
 }
