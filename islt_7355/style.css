@@ -162,6 +162,15 @@
         display: none;
     }
 
+    img.inPageIcon {
+        display: none;
+    }
+
+    footer {
+        color: #000;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
     .orangeButton {
         display: none;
     }
