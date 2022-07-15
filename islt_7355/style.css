@@ -164,6 +164,10 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .largeObject {
+            margin: auto;
+        }
     }
 /**/
 
@@ -207,5 +211,9 @@
 
     h1 {
         font-family: retroFont;
+    }
+
+    .largeObject {
+        display: none;
     }
 }
