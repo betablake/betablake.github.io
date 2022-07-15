@@ -123,6 +123,12 @@
             width: 60%;
             height: auto;
         }
+
+        .largeObject {
+            margin: auto;
+            min-width: 350px;
+            min-height: 350px;
+        }
     }
 /**/
 
