@@ -72,6 +72,10 @@
         margin-right: auto;
     }
 
+    iframe {
+        border-width: 0em;
+    }
+
     #nonPrintH1 {
         display: block;
     }
