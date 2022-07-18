@@ -72,6 +72,14 @@
         margin-right: auto;
     }
 
+    #nonPrintH1 {
+        display: block;
+    }
+
+    #printH1 {
+        display: none;
+    }
+
 /**/
 
 /* Custom Boxes and Text */
@@ -244,5 +252,13 @@
 
     object.largeObject {
         display: none;
+    }
+
+    #nonPrintH1 {
+        display: none;
+    }
+
+    #printH1 {
+        display: block;
     }
 }
