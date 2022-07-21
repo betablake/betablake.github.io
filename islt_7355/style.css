@@ -84,6 +84,28 @@
         display: none;
     }
 
+    table, th, td {
+        border: 1px solid #434243;
+        border-collapse: collapse;
+        padding: 1em;
+    }
+
+    .styleTable th {
+        text-decoration: underline;
+    }
+
+    .styleTable tr:nth-child(even) {
+        background-color: #99ccff;
+    }
+
+    .styleTable tbody tr:first-child, .styleTable tbody tr:last-child {
+        background-color: #ffcc99;
+    }
+
+    caption {
+        font-style: italic;
+    }
+
 /**/
 
 /* Custom Boxes and Text */
@@ -156,6 +178,10 @@
             height: 250px;
             max-width: 100%;
         }
+
+        table, th, td {
+            padding: 1em;
+        }
     }
 /**/
 
@@ -204,6 +230,19 @@
 
         .grid-container {
             padding: .25em;
+        }
+
+        table, th, td {
+            padding: .35em;
+            font-size: small;
+        }
+
+        caption {
+            font-size: small;
+        }
+
+        figure {
+            margin: 0em;
         }
     }
 /**/
