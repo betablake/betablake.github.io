@@ -3,29 +3,29 @@
     <head>
 <!--
 *****************************************************************************
-    Title: Home Page for Blake's Portfolio 
-    Use: Landing page for visitors to the site
+    Title: Contact Form
+    Use: Allow the user to contact me
     Author:  Blake Pieper
     School/Term:  University of Missouri, Summer 2022
-    Developed: 7/17/22
-    Tested: 7/17/22
+    Developed: 7/20/22
+    Tested: 7/20/22
 ******************************************************************************
 -->
 
-<!-- Doc Info -->
+<!-- Doc Info-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blake's Portfolio</title>
+        <title>Contact</title>
 
 <!-- Style Sheets -->
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="nav.css" />
 
 <!-- Loading FontAwesome for the copyright icon-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
     </head>
     
@@ -51,27 +51,57 @@
     </nav>
 
         <header>
-            <h1> Blake’s Portfolio for the MS of Learning Technologies and Design Program</h1>
-            <p>Welcome to my portfolio website! Here you can find out more about me, view previous projects, learn about my career, and see how to contact me.</p>
+            <h1>Contact</h1>
         </header>
-        
+
 <!-- Content -->
-        <main class="grid-container">            
+        <main class="grid-container">
             <div>
-                <h3>Purpose, Goals, and Objectives</h3>
-                <p class="indented">
-                    This website was created to highlight both the core competencies gained as a part of the Master of Science (MS) of Learning Technologies and Design (LTD) program as well as demonstrate my capabilities as a developer, designer, and instructor. To that end, the website includes three projects I have created that exemplify a specific competency for the program. Each project is accompanied by a visual, a reflection, and a description. Along with the projects, a reflection illuminates my views and personal philosophy. Through the projects included and reflections, this website aims to show my personal and professional growth attained through the MS of LTD program.
+                <h3>Reach out to me!</h3>
+                <p>
+                    If you wish to contact me, please feel free to reach out via email. Alternatively, you may use the contact form to submit inquiries.
                 </p>
             </div>
-
-            <img src="Theseus.png" alt="A screen capture from the game 'Theseus and the Labyrinth'" class="centered" />
+            <div> 
+                <h3>Contact info</h3>
+                <ul>
+                    <li>Blake Pieper</li>
+                    <li>+1 888-888-8888</li>
+                    <li>bp7km@umsystem.edu</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Send an inquiry</h3>
+                <form action="mailto:bp7km@missouri.edu?subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
+                    <div>
+                        <label for="FirstName">First Name</label>
+                        <input type="text" class ="longField" name="FirstName" id="FirstName" autofocus />
+                    </div>
+                    <div>
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class ="longField" name="LastName" id="LastName" autofocus />
+                    </div>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="email" class ="longField" name="Email" id="Email" autofocus />
+                    </div>
+                    <div>
+                        <label for="Topic">Topic</label>
+                        <input type="text" class ="longField" name="Topic" id="Topic" autofocus />
+                    </div>
+                    <div>
+                        <label for="Message">Message</label>
+                        <input type="text" class ="largeField longField" name="Message" id="Message" autofocus />
+                    </div>
+                    <input type="submit" autofocus />
+                </form>
+            </div>
         </main>
-        
+
 <!-- Footer -->
         <footer>
             <p>Blake Pieper <img src="images/email.ico" alt="email icon shaped like an envelope" class="inPageIcon" /><img src="images/email.ico" alt="email icon shaped like an envelope" class="inPageIconLarge" /> bp7km@umsystem.edu <img src="images/phoneReverse.ico" alt="phone icon image" class="inPageIcon" /><img src="images/phoneReverse.ico" alt="phone icon image" class="inPageIconLarge" /> +1 888-888-8888 </p>
             <p class="rightAligned">Created by <i class="fa fa-copyright"></i> Blake Pieper. All Rights Reserved.</p>
         </footer>
-
     </body>
 </html>
