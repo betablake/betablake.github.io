@@ -106,6 +106,15 @@
         font-style: italic;
     }
 
+    .subtext {
+        font-size: .75em;
+    }
+
+    i.fa-asterisk {
+        color: red;
+        font-size: .5em;
+    }
+
 /**/
 
 /* Custom Boxes and Text */
@@ -198,6 +207,7 @@
             padding: 1em;
             border: #000 solid 1px;
         }
+
     }
 /**/
 

@@ -74,26 +74,29 @@
                 <h3>Send an inquiry</h3>
                 <form action="mailto:bp7km@missouri.edu?subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
                     <div>
-                        <label for="FirstName">First Name</label>
-                        <input type="text" class ="longField" name="FirstName" id="FirstName" autofocus />
+                        <label for="FirstName">First Name<i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                        <input type="text" class ="longField" name="FirstName" id="FirstName" required autofocus />
                     </div>
                     <div>
-                        <label for="LastName">Last Name</label>
-                        <input type="text" class ="longField" name="LastName" id="LastName" />
+                        <label for="LastName">Last Name<i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                        <input type="text" class ="longField" name="LastName" id="LastName" required />
                     </div>
                     <div>
-                        <label for="Email">Email</label>
-                        <input type="email" class ="longField" name="Email" id="Email" />
+                        <label for="Email">Email<i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                        <input type="email" class ="longField" name="Email" id="Email" required />
                     </div>
                     <div>
-                        <label for="Topic">Topic</label>
-                        <input type="text" class ="longField" name="Topic" id="Topic" />
+                        <label for="Topic">Topic<i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                        <input type="text" class ="longField" name="Topic" id="Topic" required />
                     </div>
                     <div>
-                        <label for="Message">Message</label>
-                        <input type="text" class ="largeField longField" name="Message" id="Message" />
+                        <label for="Message">Message<i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                        <input type="text" class ="largeField longField" name="Message" id="Message" required />
                     </div>
                     <input type="submit" />
+                    <p class = "subtext">
+                        <i class="fa fa-asterisk" aria-hidden="true"></i> = required field
+                    </p>
                 </form>
             </div>
         </main>
