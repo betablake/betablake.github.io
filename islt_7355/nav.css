@@ -1,12 +1,12 @@
 nav {
-    position: relative;
+    position: sticky;
     margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
 }
 
 .collapseNav {
-    background-color: #ffcc99;
+    background-color: #ffd791;
     padding: .75em;
 }
 
@@ -14,7 +14,7 @@ nav {
 
     .topnav {
         display: inline;
-        padding: .5em;
+        padding: .35em;
         margin-top:.25em;
         margin-bottom: .25em;
         margin-right: 1em;
@@ -22,7 +22,7 @@ nav {
     }
 
     .topnav a:hover {
-        background-color: #ffcc99;
+        background-color: #ffd791;
     }
     
     .dropdown-content {
@@ -50,14 +50,14 @@ nav {
         padding-bottom: 1em;
         margin-top:.25em;
         margin-bottom: .25em;
-        background-color: #99ccff;
+        background-color: #aeecef;
         border-radius: .5em;
         width: 7em;
         height: 1.25em;
     }
     
     .dropItem a:hover {
-        background-color: #ffcc99;
+        background-color: #ffd791;
     }
 
     .collapseNav {
@@ -77,13 +77,13 @@ nav {
 
     .topnav > a {
         font-size: large; 
-        padding-left: 2em;
-        padding-right: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
         padding-top: 1em;
         padding-bottom: 1em;
         margin-top:.25em;
         margin-bottom: .25em;
-        background-color: #99ccff;
+        background-color: #aeecef;
         border-radius: .5em;
         width: 7em;
         height: 1.25em;
@@ -122,7 +122,7 @@ nav a {
     }
 
     nav ul li ul li {
-        background-color: #ffcc99;
+        background-color: #ffd791;
         border-radius: .5em;
         padding: .25em;
         margin: .25em;
@@ -135,7 +135,7 @@ nav a {
 
     .collapseNav {
         display: inline;
-        background-color: #99ccff;
+        background-color: #aeecef;
     }
 
     #navbar:target {
@@ -155,7 +155,7 @@ nav a {
         padding-bottom: .25em;
         margin-top:.25em;
         margin-bottom: .25em;
-        background-color: #99ccff;
+        background-color: #aeecef;
         border-radius: .5em;
         height: 1em;
         width: auto;

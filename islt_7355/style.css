@@ -1,4 +1,5 @@
-/* Page Formatting */
+/* Page Formatting */ 
+
     @font-face {
         font-family: retroFont;
         src: url(EduVICWANTBeginner-VariableFont_wght.ttf);
@@ -10,25 +11,29 @@
         /*border: .05em solid #000;*/
         border-radius: .25em;
         padding: .2em;
-        background-color: #ffcc99;
+        background-color: #ffd791;
         font-family: retroFont;
     }
 
-    body {
+    main, header {
         padding-top: .5em;
         padding-left: .5em;
         padding-right: .5em;
         margin:0;
+        font-size: 18px;
     }
 
     footer {
-        margin: 0;
-        padding: 1.95em;
+        /*padding: 1.95em;
         background-image: url(images/toffeeHead32-2.jpg);
         background-size: auto;
-        background-repeat: repeat-x;
+        background-repeat: repeat-x; */
         color: #fff;
-        background-color: #434243;
+        background-color: #000;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
     
     .inPageIcon {
@@ -85,7 +90,7 @@
     }
 
     table, th, td {
-        border: 1px solid #434243;
+        border: 1px solid #000;
         border-collapse: collapse;
         padding: 1em;
     }
@@ -95,11 +100,11 @@
     }
 
     .styleTable tr:nth-child(even) {
-        background-color: #99ccff;
+        background-color: #aeecef;
     }
 
     .styleTable tbody tr:first-child, .styleTable tbody tr:last-child {
-        background-color: #ffcc99;
+        background-color: #ffd791;
     }
 
     caption {
@@ -115,6 +120,11 @@
         font-size: .5em;
     }
 
+    .gameCaption {
+        text-align: center;
+        font-size: .85em;
+    }
+
 /**/
 
 /* Custom Boxes and Text */
@@ -127,27 +137,18 @@
     }
 
     .blueBox {
-        background-color: #99ccff;
+        background-color: #aeecef;
         border-radius: 1em;
         padding: 1em;
     }  
 
-    .indented:first-of-type::first-letter {
-        font-size: 130%;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: italic;
-    }
-
-    .indented:first-of-type {
-        text-indent: 0;
-    }
 /**/
 
 /* Desktop View */
     @media screen and (min-width: 700px) {
         .rightAligned{
             position: absolute;
-            right: 0px;
+            right: 0;
             float: right;
         }
         
@@ -165,7 +166,7 @@
         }
 
         .orangeButton {
-            background-color: #ffcc99;
+            background-color: #ffd791;
             margin-top: .75em;
             margin-bottom: .75em;
             margin-left: auto;
@@ -178,7 +179,7 @@
         }
 
         img {
-            width: 60%;
+            width: 90%;
             height: auto;
         }
 
@@ -208,6 +209,30 @@
             border: #000 solid 1px;
         }
 
+        .document {
+            width: 95%; 
+            height: auto; 
+            min-height: 700px; 
+            margin: auto;
+        }
+
+        .docButton {
+            display: none;
+            margin-bottom: 2em;
+        }
+
+        .desktopFooter {
+            display: inline;
+        }
+
+        .mobileFooter {
+            display: none;
+        }
+
+        h3 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
     }
 /**/
 
@@ -218,10 +243,11 @@
         }
         h3 {
             font-size: 1em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
         img {
-            width: 75%;
+            width: 80%;
             height: auto;
         }
 
@@ -231,12 +257,11 @@
         }
 
         .orangeButton {
-            background-color: #ffcc99;
+            background-color: #ffd791;
             margin-top: .5em;
             margin-bottom: .5em;
             padding: 1em;
             font-size: small;
-            text-decoration: none;
             text-decoration: none;
             max-width: 320px;
             text-align: center;
@@ -284,6 +309,30 @@
         form {
             margin: .5em;
         }
+
+        .document {
+            display: none;
+        }
+
+        .docButton {
+            display: inline;
+            margin-bottom: 2em;
+        }
+
+        .desktopFooter {
+            display: none;
+        }
+
+        .mobileFooter {
+            display: block;
+            padding: 0em;
+            margin: 0cm;
+        }
+
+        footer {
+            position: static;        
+        }
+
     }
 /**/
 
@@ -312,7 +361,7 @@
 
     footer {
         color: #000;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .orangeButton {
@@ -320,7 +369,7 @@
     }
 
     body {
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: #000;
         margin: 1in;
     }
@@ -343,5 +392,13 @@
 
     #printH1 {
         display: block;
+    }
+
+    .desktopFooter {
+        display: block;
+    }
+
+    .mobileFooter {
+        display: none;
     }
 }
