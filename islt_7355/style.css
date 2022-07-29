@@ -125,6 +125,12 @@
         font-size: .85em;
     }
 
+    #nameSection {
+        margin: 1em;
+        padding: 1em;
+        border: #000 1px solid;
+    }
+
 /**/
 
 /* Custom Boxes and Text */
@@ -214,11 +220,6 @@
             height: auto; 
             min-height: 700px; 
             margin: auto;
-        }
-
-        .docButton {
-            display: none;
-            margin-bottom: 2em;
         }
 
         .desktopFooter {
@@ -314,11 +315,6 @@
             display: none;
         }
 
-        .docButton {
-            display: inline;
-            margin-bottom: 2em;
-        }
-
         .desktopFooter {
             display: none;
         }
@@ -366,6 +362,8 @@
 
     .orangeButton {
         display: none;
+        text-decoration: none;
+        color: #000;
     }
 
     body {

@@ -7,8 +7,8 @@
     Use: Allow the user to contact me
     Author:  Blake Pieper
     School/Term:  University of Missouri, Summer 2022
-    Developed: 7/24/22
-    Tested: 7/24/22
+    Developed: 7/28/22
+    Tested: 7/28/22
 ******************************************************************************
 -->
 
@@ -21,8 +21,15 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="nav.css" />
 
-<!-- Loading FontAwesome for the copyright icon-->
+<!-- Loading other libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- My Scripts -->
+<script src="scripts.js"></script>
 
 <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -103,6 +110,77 @@
         </main>
 
         <br />
+
+<!-- Name function section -->
+    <div id="nameSection">
+        <p>
+            Enter your first name to customize the site!
+        </p>
+        <div class="form-group">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+
+        <p id="welcomeText">
+            , <br /> Welcome to the site! Feel free to peruse the projects, my "About" page, or my reflection! Use the contact page to reach out if you have any questions.
+        </p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-success" id="submitName">Submit</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-info" id="preferences">Preferences</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-warning" id="clearData">Clear Data</button>
+            </div>
+        </div>
+    </div>
+
+<br />
+
+<!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">This Site Uses Cookies</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>
+                        This site uses a cookie to display and store your first name locally. No data is stored from this site. Please select yes if you agree to storing your name locally. If not, the site will only keep your name temporarily and will not remember you when you return. The site will automatically store a cookie to track this preference.
+                    </p>
+
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio" value="yes" id="yesConsent">Yes, I consent to storing my first name in the browser.
+                        </label>
+                    </div>
+
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio" value="no" id="noConsent">No, I do not want to store my first name in the browser.
+                        </label>
+                    </div>
+
+                    <button type="button" class="btn btn-success" id="submitConsent">Submit</button>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 <!-- Footer -->
         <footer>
